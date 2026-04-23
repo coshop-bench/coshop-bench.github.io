@@ -2,31 +2,59 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Anonymous Appendix</title>
+  <title>CoShop-Bench</title>
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
+      background: #f7f8fb;
+      color: #222;
+      text-align: center;
     }
-    header {
-      padding: 12px 20px;
-      background: #f5f5f5;
-      border-bottom: 1px solid #ddd;
+
+    .container {
+      max-width: 760px;
+      margin: 120px auto 0;
+      padding: 48px 32px;
+      background: white;
+      border-radius: 18px;
+      box-shadow: 0 8px 28px rgba(0, 0, 0, 0.08);
     }
-    iframe {
-      width: 100%;
-      height: calc(100vh - 55px);
-      border: none;
+
+    h1 {
+      font-size: 48px;
+      margin-bottom: 12px;
+    }
+
+    p {
+      font-size: 18px;
+      color: #555;
+      margin-bottom: 32px;
+    }
+
+    a.button {
+      display: inline-block;
+      padding: 14px 24px;
+      font-size: 17px;
+      color: white;
+      background: #2f5bea;
+      text-decoration: none;
+      border-radius: 10px;
+    }
+
+    a.button:hover {
+      background: #2448c7;
     }
   </style>
 </head>
 <body>
-  <header>
-    <strong>Anonymous Appendix for RECASTS 2026 Submission</strong>
-    &nbsp; | &nbsp;
-    <a href="appendix.pdf">Download PDF</a>
-  </header>
+  <div class="container">
+    <h1>CoShop-Bench</h1>
+    <p>Anonymous appendix for RecSys 2026 submission</p>
 
-  <iframe src="appendix.pdf"></iframe>
+    <a class="button" href="appendix.pdf">
+      View Appendix PDF
+    </a>
+  </div>
 </body>
 </html>
