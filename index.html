@@ -1,60 +1,114 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CoShop-Bench</title>
+
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: Arial, Helvetica, sans-serif;
       background: #f7f8fb;
       color: #222;
-      text-align: center;
     }
 
     .container {
-      max-width: 760px;
-      margin: 120px auto 0;
-      padding: 48px 32px;
-      background: white;
-      border-radius: 18px;
-      box-shadow: 0 8px 28px rgba(0, 0, 0, 0.08);
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 80px 24px 40px;
+      text-align: center;
     }
 
     h1 {
-      font-size: 48px;
-      margin-bottom: 12px;
+      font-size: 2.6rem;
+      margin-bottom: 16px;
     }
 
-    p {
-      font-size: 18px;
+    .subtitle {
+      font-size: 1.2rem;
+      line-height: 1.6;
       color: #555;
-      margin-bottom: 32px;
+      margin-bottom: 36px;
     }
 
-    a.button {
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      margin-bottom: 48px;
+      flex-wrap: wrap;
+    }
+
+    .button {
       display: inline-block;
-      padding: 14px 24px;
-      font-size: 17px;
-      color: white;
-      background: #2f5bea;
+      padding: 14px 28px;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 600;
       text-decoration: none;
-      border-radius: 10px;
+      border: none;
+      cursor: pointer;
     }
 
-    a.button:hover {
-      background: #2448c7;
+    .button-primary {
+      background: #2563eb;
+      color: white;
+    }
+
+    .button-primary:hover {
+      background: #1d4ed8;
+    }
+
+    .button-disabled {
+      background: #d1d5db;
+      color: #6b7280;
+      cursor: not-allowed;
+    }
+
+    .pdf-viewer {
+      width: 100%;
+      height: 800px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      background: white;
+    }
+
+    footer {
+      margin-top: 32px;
+      color: #777;
+      font-size: 0.9rem;
     }
   </style>
 </head>
+
 <body>
   <div class="container">
     <h1>CoShop-Bench</h1>
-    <p>Anonymous appendix for RecSys 2026 submission</p>
 
-    <a class="button" href="appendix.pdf">
-      View Appendix PDF
-    </a>
+    <p class="subtitle">
+      Spatial Grounding and Visual Reasoning Benchmarks for Multimodal Product Recommendation
+    </p>
+
+    <div class="buttons">
+      <button class="button button-disabled" disabled>
+        Dataset
+      </button>
+
+      <a class="button button-primary" href="appendix.pdf" target="_blank">
+        Appendix
+      </a>
+    </div>
+
+    <iframe
+      class="pdf-viewer"
+      src="appendix.pdf"
+      title="Appendix PDF">
+    </iframe>
+
+    <footer>
+      Anonymous project page for peer review.
+    </footer>
   </div>
 </body>
 </html>
